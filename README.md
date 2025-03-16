@@ -26,7 +26,6 @@ This AI-driven web application helps users create professional, ATS-optimized re
 
 -> AI/ML: GPT-based models for text generation, keyword extraction, and personalization
 
-Hosting: Vercel / Azure
 
 🎯 Unique Selling Proposition (USP)
 
