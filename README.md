@@ -1,36 +1,35 @@
 # CareerCraft
 
-This AI-driven web application helps users create professional, ATS-optimized resumes and personalized cover letters effortlessly. Leveraging advanced AI models, it generates well-structured resumes based on user inputs such as education, experience, and skills. It also provides tailored cover letters by analyzing job descriptions and suggesting relevant content.
+This web application powered by AI assists users in generating professional, ATS-compliant resumes and custom cover letters with ease. Utilizing cutting-edge AI models, it forms well-organized resumes from user submissions of education, experience, and skills. It even offers customized cover letters by reviewing job descriptions and recommending corresponding content.
 
-🎯 Key Features
+Key Features
 
--> AI-Powered Resume Builder – Automatically generates polished resumes based on user-provided details.
+-> AI Resume Generator: This tool uses data entered by the user to automatically create clean resumes.
 
--> Cover Letter Assistant – Crafts personalized cover letters tailored to specific job descriptions.
+-> Cover Letter Writer: Produces personalised cover letters according to specific job postings.
 
--> ATS Optimization – Enhances resume formatting and keyword placement for better Applicant Tracking System (ATS) compatibility.
+-> ATS optimization: The resume is optimized with respect to structure and keyword placement to ensure ATS compatibility.
 
--> Skill & Job Matching – Recommends relevant job roles and skills based on user backgrounds.
+-> Skill & Job Matching: Based on user history, this feature suggests appropriate job roles and skills.
 
--> Customizable Templates – Offers multiple resume and cover letter templates for user selection.
+-> Customisable Templates: Provides users with a variety of resume and cover letter templates to choose from.
 
--> Instant Feedback & Improvement Suggestions – AI analyzes resumes and provides actionable insights for improvement.
+-> Immediate Feedback & Improvement Insights: AI analyses resumes and offers useful feedback for improvement.
 
-🛠 Tech Stack
+Tech Stack
 
--> Backend: Python (FastAPI/Django), Azure OpenAI API / Hugging Face Transformers
+-> Backend: Python (FastAPI/Django), Hugging Face Transformers / Azure OpenAI API
 
--> Frontend: React.js / Next.js
+-> Frontend: Next.js / React.js
 
--> Database: Firebase / PostgreSQL
+-> Database: PostgreSQL / Firebase
 
--> AI/ML: GPT-based models for text generation, keyword extraction, and personalization
+-> AI/ML: GPT-based models for personalization, keyword extraction, and text generation
 
+Unique Selling Proposition (USP)
 
-🎯 Unique Selling Proposition (USP)
+-> Accessible & Free – Takes advantage of free tier on Azure and Hugging Face models in order to be cost-effective.
 
--> Free & Accessible – Utilizes Azure’s free tier and Hugging Face models to minimize costs.
+-> AI-Powered Personalization – Creates personalized, role-based resumes and cover letters, as opposed to static builders.
 
--> AI-Driven Personalization – Generates unique, role-specific resumes and cover letters, unlike traditional static builders.
-
--> Student-Centric Focus – Designed for early-career professionals and students with limited work experience.
+-> Student-Focused Approach – Built for early career professionals and students with minimal work.
