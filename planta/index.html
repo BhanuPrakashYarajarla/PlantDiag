@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Diagnosis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <link rel="manifest" href="manifest.json">
+        <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js')
+            .then(() => console.log('Service Worker Registered'));
+        }
+        </script>
+
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🌿 PlantDiag</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Diagnosis</a></li>
+            <li><a href="#">Preventive Measures</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>🌱 Plant Disease Diagnosis</h1>
+        </header>
+
+        
+
+        <div class="camera-section">
+            <div class="video-wrapper">
+                <video id="video" autoplay playsinline></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+            </div>
+            <div class="button-group">
+                <button id="startBtn" class="btn btn-primary">Start Camera</button>
+                <button id="scanBtn" class="btn btn-secondary" disabled>Start Scanning</button>
+                <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+                <button id="uploadBtn" class="btn btn-upload">Upload Image</button>
+            </div>
+            <div id="snapshot" class="snapshot"></div>
+        </div>
+
+        <div class="diagnosis-container">
+            <div class="diagnosis-box">
+                <h2>Plant Name</h2>
+                <p id="plantName">Waiting for input...</p>
+            </div>
+            <div class="diagnosis-box">
+                <h2>Disease</h2>
+                <p id="disease">Waiting for input...</p>
+            </div>
+            <div class="diagnosis-box">
+                <h2>Cure</h2>
+                <p id="cure">Waiting for input...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
