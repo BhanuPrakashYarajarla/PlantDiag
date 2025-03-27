@@ -1,35 +1,71 @@
-# CareerCraft
+# 🌱 Plant Disease Identification and Cure
 
-This web application powered by AI assists users in generating professional, ATS-compliant resumes and custom cover letters with ease. Utilizing cutting-edge AI models, it forms well-organized resumes from user submissions of education, experience, and skills. It even offers customized cover letters by reviewing job descriptions and recommending corresponding content.
+##  Overview
+This project is a web-based application that identifies plant species and detects diseases using image recognition. It provides users with plant care recommendations and treatment suggestions based on identified diseases.
 
-Key Features
+##  Features
+- 📷 **Camera-based scanning**: Capture plant images using a webcam.
+- 📂 **Image upload support**: Upload images from local storage.
+- 🌿 **Plant identification**: Detect plant species using the Perenual API.
+- 🦠 **Disease detection**: Uses a trained machine learning model (TensorFlow.js) to identify diseases.
+- 💊 **Treatment suggestions**: Provides care recommendations for detected diseases.
+- 🔄 **Real-time scanning**: Continuously scan plants for identification.
+- ⏹️ **Auto camera shutdown**: Stops the camera when not in use.
 
--> AI Resume Generator: This tool uses data entered by the user to automatically create clean resumes.
+##  Technologies Used
+- **Frontend**: HTML, CSS, JavaScript
+- **Frameworks/Libraries**: TensorFlow.js, Bootstrap
+- **APIs**: [Perenual Plant API](https://perenual.com/)
+- **Machine Learning**: Pre-trained ML models for disease identification
 
--> Cover Letter Writer: Produces personalised cover letters according to specific job postings.
+##  Installation
 
--> ATS optimization: The resume is optimized with respect to structure and keyword placement to ensure ATS compatibility.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/your-username/plant-disease-identification.git
+   cd plant-disease-identification
+   ```
 
--> Skill & Job Matching: Based on user history, this feature suggests appropriate job roles and skills.
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
 
--> Customisable Templates: Provides users with a variety of resume and cover letter templates to choose from.
+3. **Run the application:**
+   ```sh
+   npm start
+   ```
 
--> Immediate Feedback & Improvement Insights: AI analyses resumes and offers useful feedback for improvement.
+##  Usage
+1. Click **Start Camera** to enable live scanning or upload an image.
+2. Click **Scan** to identify the plant and detect diseases.
+3. View the plant name, detected disease, and suggested cure.
+4. Stop the camera when done to save resources.
 
-Tech Stack
+##  API Configuration
+To use the **Perenual API**, obtain an API key from [Perenual](https://perenual.com/) and add it to the project:
+```js
+const PERENUAL_API_KEY = 'your-api-key-here';
+```
 
--> Backend: Python (FastAPI/Django), Hugging Face Transformers / Azure OpenAI API
+##  Machine Learning Model
+- The disease detection model is built using TensorFlow.js.
+- Pretrained with plant disease datasets.
+- Can be replaced with a custom-trained model for better accuracy.
 
--> Frontend: Next.js / React.js
+##  Future Enhancements
+- 🌍 **Multilingual support**
+- 📊 **Improved ML model with higher accuracy**
+- 🔎 **More plant species and disease database**
+- 📱 **Mobile PWA support**
 
--> Database: PostgreSQL / Firebase
+##  Contributing
+Contributions are welcome! If you’d like to improve the project:
+1. Fork the repository.
+2. Create a new feature branch (`feature-new`).
+3. Commit your changes.
+4. Open a pull request.
 
--> AI/ML: GPT-based models for personalization, keyword extraction, and text generation
+---
+🌿 **Happy Planting!** 🌿
 
-Unique Selling Proposition (USP)
-
--> Accessible & Free – Takes advantage of free tier on Azure and Hugging Face models in order to be cost-effective.
-
--> AI-Powered Personalization – Creates personalized, role-based resumes and cover letters, as opposed to static builders.
-
--> Student-Focused Approach – Built for early career professionals and students with minimal work.
