@@ -5,37 +5,30 @@ const urlsToCache = [
   "/styles.css",
   "/script.js",
   "/icons/icon-192x192.png",
-  "/icons/icon-512x512.png"
+  "/icons/icon-512x512.png",
+  "/manifest.json"
 ];
 
 // Install the Service Worker and cache assets
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(urlsToCache);
-    })
+    caches.open(CACHE_NAME).then((cache) => cache.addAll(urlsToCache))
   );
 });
 
 // Fetch requests from cache or network
 self.addEventListener("fetch", (event) => {
   event.respondWith(
-    caches.match(event.request).then((response) => {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request).then((response) => response || fetch(event.request))
   );
 });
 
-// Activate the new Service Worker and remove old caches
+// Activate and remove old caches
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
       return Promise.all(
-        cacheNames.map((cache) => {
-          if (cache !== CACHE_NAME) {
-            return caches.delete(cache);
-          }
-        })
+        cacheNames.map((cache) => cache !== CACHE_NAME ? caches.delete(cache) : null)
       );
     })
   );
