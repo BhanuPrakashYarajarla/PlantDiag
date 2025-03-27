@@ -20,7 +20,6 @@ body {
     padding: 15px 20px;
     border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -35,21 +34,39 @@ body {
     gap: 20px;
 }
 
-.nav-links li {
-    display: inline;
-}
-
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-    color: #c8e6c9;
+/* Buttons */
+.btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
 }
 
+.btn-install {
+    background: #ff9800;
+    color: white;
+}
+
+.btn-install:hover {
+    background: #f57c00;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 /* Main Container */
 .container {
     max-width: 1200px;
