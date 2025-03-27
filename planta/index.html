@@ -35,8 +35,17 @@
                 });
             }
         }
-    </script>
 
+        // Hide install button if app is already installed
+        window.addEventListener('appinstalled', () => {
+            document.getElementById('installBtn').style.display = 'none';
+        });
+
+        // Hide button if app is already running in standalone mode
+        if (window.matchMedia('(display-mode: standalone)').matches) {
+            document.getElementById('installBtn').style.display = 'none';
+        }
+    </script>
 </head>
 <body>
 
@@ -56,8 +65,6 @@
             <h1>🌱 Plant Disease Diagnosis</h1>
         </header>
 
-        
-
         <div class="camera-section">
             <div class="video-wrapper">
                 <video id="video" autoplay playsinline></video>
@@ -68,7 +75,7 @@
                 <button id="scanBtn" class="btn btn-secondary" disabled>Start Scanning</button>
                 <input type="file" id="uploadInput" accept="image/*" style="display: none;">
                 <button id="uploadBtn" class="btn btn-upload">Upload Image</button>
-                <button id="installBtn" class="btn btn-install" style="display:none;" onclick="installApp()">Install App</button>
+                <button id="installBtn" class="btn btn-install" style="display:none;" onclick="installApp()">📲 Install App</button>
             </div>
             <div id="snapshot" class="snapshot"></div>
         </div>
