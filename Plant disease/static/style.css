@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #e0f2e9, #d3f5c6);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2f7d32;
+  }
+  
+  input[type="file"], select, button, label {
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  /* --- Navbar Styling --- */
+.navbar {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  }
+  
+  .navbar-brand {
+    font-size: 20px;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #c8f7c5;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+      margin-top: 10px;
+    }
+  }
+  
+  
+  button {
+    background-color: #2f7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #256d27;
+  }
+  
+  .btns {
+    margin-top: 20px;
+  }
+  
+  #result {
+    margin-top: 20px;
+    background: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    white-space: pre-wrap;
+    text-align: left;
+  }
