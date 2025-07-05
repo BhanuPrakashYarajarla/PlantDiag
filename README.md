@@ -1,71 +1,85 @@
-# 🌱 Plant Disease Identification and Cure
+# 🌿 Plantdiag
+## Plant Disease Detection and Care System
 
-##  Overview
-This project is a web-based application that identifies plant species and detects diseases using image recognition. It provides users with plant care recommendations and treatment suggestions based on identified diseases.
+A smart and responsive web application that detects plant diseases from uploaded images and provides treatment tips, temperature care advice, and more. Built with Flask, HTML/CSS, and JavaScript.
 
-##  Features
-- 📷 **Camera-based scanning**: Capture plant images using a webcam.
-- 📂 **Image upload support**: Upload images from local storage.
-- 🌿 **Plant identification**: Detect plant species using the Perenual API.
-- 🦠 **Disease detection**: Uses a trained machine learning model (TensorFlow.js) to identify diseases.
-- 💊 **Treatment suggestions**: Provides care recommendations for detected diseases.
-- 🔄 **Real-time scanning**: Continuously scan plants for identification.
-- ⏹️ **Auto camera shutdown**: Stops the camera when not in use.
+## 🚀 Features
 
-##  Technologies Used
-- **Frontend**: HTML, CSS, JavaScript
-- **Frameworks/Libraries**: TensorFlow.js, Bootstrap
-- **APIs**: [Perenual Plant API](https://perenual.com/)
-- **Machine Learning**: Pre-trained ML models for disease identification
+- 🌱 Upload plant images to detect diseases
+- 🩺 AI-powered diagnosis and result display
+- 🌡️ Temperature care recommendations
+- 💡 Personalized plant care tips
 
-##  Installation
+## 🖼️ Screenshots
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/your-username/plant-disease-identification.git
-   cd plant-disease-identification
-   ```
+![Header](Plant%20disease/header.jpg)
 
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
+## ⚙️ Tech Stack
 
-3. **Run the application:**
-   ```sh
-   npm start
-   ```
+- **Backend**: Python, Flask  
+- **Frontend**: HTML, CSS, JavaScript  
+- **Data Handling**: JSON  
 
-##  Usage
-1. Click **Start Camera** to enable live scanning or upload an image.
-2. Click **Scan** to identify the plant and detect diseases.
-3. View the plant name, detected disease, and suggested cure.
-4. Stop the camera when done to save resources.
+## 📁 Folder Structure
 
-##  API Configuration
-To use the **Perenual API**, obtain an API key from [Perenual](https://perenual.com/) and add it to the project:
-```js
-const PERENUAL_API_KEY = 'your-api-key-here';
+```
+Plant DISEASE/
+├── fonts/
+│   ├── NotoSans-Italic-VariableFont_wdth,wght.ttf
+│   └── NotoSans-VariableFont_wdth,wght.ttf
+├── Plant disease/
+│   ├── app.py
+│   ├── templates/
+│   │   ├── index.html
+│   │   ├── result.html
+│   │   ├── temperature_care.html
+│   │   ├── tips.html
+│   │   └── image.jpg
+│   └── static/
+│       ├── script.js
+│       └── style.css
+├── header.jpg
 ```
 
-##  Machine Learning Model
-- The disease detection model is built using TensorFlow.js.
-- Pretrained with plant disease datasets.
-- Can be replaced with a custom-trained model for better accuracy.
-
-##  Future Enhancements
-- 🌍 **Multilingual support**
-- 📊 **Improved ML model with higher accuracy**
-- 🔎 **More plant species and disease database**
-- 📱 **Mobile PWA support**
-
-##  Contributing
-Contributions are welcome! If you’d like to improve the project:
-1. Fork the repository.
-2. Create a new feature branch (`feature-new`).
-3. Commit your changes.
-4. Open a pull request.
-
 ---
-🌿 **Happy Planting!** 🌿
+
+## 🔧 Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/plant-disease-detection.git
+cd plant-disease-detection
+```
+
+### 2. Set Up a Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\\Scripts\\activate
+```
+### 3. Install Dependencies
+```bash
+pip install flask
+```
+### 4. Run the App
+```bash
+cd "Plant disease"
+python app.py
+```
+### 5.Open in Browser
+```bash
+http://127.0.0.1:5000/
+```
+## 🤝 Contributing
+
+Pull requests and ideas are welcome!  
+If you'd like to enhance the detection model, UI, or features, feel free to:
+
+- Fork this repository
+- Create a new branch (`git checkout -b feature-xyz`)
+- Commit your changes (`git commit -m 'Add feature'`)
+- Push to the branch (`git push origin feature-xyz`)
+- Open a Pull Request
+
+Let's grow this project together! 🌱
 
