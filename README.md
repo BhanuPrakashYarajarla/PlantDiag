@@ -12,7 +12,7 @@ A smart and responsive web application that detects plant diseases from uploaded
 
 ## 🖼️ Screenshots
 
-![Header](Plant%20disease/header.jpg)
+![Header](Plant%20disease/Plantdiag.png)
 
 ## ⚙️ Tech Stack
 
