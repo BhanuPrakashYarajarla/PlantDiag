@@ -3,12 +3,38 @@
 
 A smart and responsive web application that detects plant diseases from uploaded images and provides treatment tips, temperature care advice, and more. Built with Flask, HTML/CSS, and JavaScript.
 
-## 🚀 Features
+## ✨ Key Features
 
-- 🌱 Upload plant images to detect diseases
-- 🩺 AI-powered diagnosis and result display
-- 🌡️ Temperature care recommendations
-- 💡 Personalized plant care tips
+### 🌱 Disease Detection
+- Upload images of plant leaves or affected areas
+- AI-powered backend processes the image
+- Displays disease name or condition detected
+
+### 🩺 Diagnosis Results
+- Clear and structured diagnosis output
+- Easy-to-understand results for non-technical users
+
+### 🌡️ Temperature Care Guidance
+- Recommends optimal temperature ranges
+- Advises precautions for extreme weather conditions
+
+### 💡 Personalized Plant Care Tips
+- Watering recommendations
+- Soil and sunlight guidance
+- Preventive care suggestions to avoid future infections
+
+### 🖥️ Clean & Responsive UI
+- Simple navigation flow
+- Mobile-friendly design
+- Minimal and distraction-free layout
+
+## 🔄 Application Workflow
+
+1. User uploads a plant image via the web interface  
+2. Image is sent to the Flask backend  
+3. Backend processes the image and maps it to known conditions  
+4. Diagnosis and care information are returned  
+5. Results, temperature care, and tips are displayed on dedicated pages  
 
 ## 🖼️ Screenshots
 
@@ -48,7 +74,7 @@ Plant DISEASE/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/plant-disease-detection.git
+git clone https://github.com/BhanuPrakashYarajarla/plant-disease-detection.git
 cd plant-disease-detection
 ```
 
