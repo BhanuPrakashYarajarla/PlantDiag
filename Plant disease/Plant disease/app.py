@@ -5,7 +5,7 @@ from io import BytesIO
 
 app = Flask(__name__)
 
-genai.configure(api_key="AIzaSyD2ZGH9Pr6bx6Yjfv0-8WSwzwr7xEUfjjc")
+genai.configure(api_key="")
 model = genai.GenerativeModel(model_name="gemini-1.5-flash")
 
 @app.route('/')
@@ -55,3 +55,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
